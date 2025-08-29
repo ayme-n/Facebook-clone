@@ -8,7 +8,6 @@ import Login from './Login';
 import Home from './Home';
 import Profile from './Profile';
 import Friends from './Friends';
-import Teest from './Teest';
 const router = createBrowserRouter([
   {
     path: "/", 
@@ -30,11 +29,7 @@ const router = createBrowserRouter([
     path :"/friends",
     element:<Friends/>
   }
-  ,
-  {
-    path :"/test",
-    element:<Teest/>
-  }
+
 ])
 
 createRoot(document.getElementById('root')).render(
