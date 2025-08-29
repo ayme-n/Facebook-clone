@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "public"."Like" ALTER COLUMN "PostID" DROP NOT NULL,
+ALTER COLUMN "CommentID" DROP NOT NULL;

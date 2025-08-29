@@ -1,0 +1,116 @@
+#login_logo {
+    width: 250px;
+    margin-top: 50px;
+}
+
+/* Common container (centered background) */
+.auth_container {
+    background-color: #f0f2f5;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-rows: auto 1fr;
+    gap: 0.5rem;
+}
+
+/* Common form box */
+.auth_form_container {
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+/* Form headers */
+.form_header_login {
+    margin: 1rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.form_header_login h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.form_header_login p {
+    color: #7b7c7e;
+}
+
+/* Divider */
+
+
+/* Form structure */
+.login_form {
+   
+    display: grid;
+
+    gap: 1.1rem;
+}
+
+select,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding-left: 10px;
+}
+
+input,
+select {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px #cfd2d7 solid;
+    font-size: 1.02rem;
+}
+
+/* Shared bottom section */
+.auth_actions {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 0.6rem;
+}
+
+.auth_actions input[type="submit"] {
+    
+    background-color: #1877f2;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.auth_actions a {
+    text-decoration: none;
+    color: #2877f2;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 0.8rem;
+    min-height: 1rem; /* reserve space */
+}
+
+/* Signup-specific overrides */
+.signup_form {
+    height: 490px;
+}
+
+
+
+/* Login-specific overrides */
+.login_form {
+    height: 330px;
+    
+}
+
+#button{
+    height: 50px;
+    width: 370px;
+}
+

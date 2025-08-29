@@ -1,0 +1,142 @@
+
+.create_comment_container{
+color: #E2E5E9;
+width: 800px;
+border-radius: 10px;
+background-color: #252728;
+display: grid;
+position: fixed;
+left: 50%;
+top:50%;
+ transform: translate(-50%, -50%);
+ z-index: 10;
+}
+
+
+.comment{
+    
+    display: grid;
+    grid-template-columns: auto  1fr;
+    column-gap: 8px;
+    width: fit-content;
+}
+
+hr{
+    margin: 1rem 0rem;
+}
+.comments{
+   
+    display: grid;
+    gap:0.7rem;
+    grid-template-rows: repeat(auto-fit,90px);
+    padding: 1rem;
+    
+}
+.comment_icon{
+    align-self: flex-start;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.comment img{
+    grid-row: 1/3;
+}
+
+.comment_footer{
+    display: flex;
+    gap:20px;
+    font-size: 0.rem;
+    width: fit-content;
+    padding-left:1rem;
+    padding-top: 0.3rem;
+}
+
+.comment_body{
+    border-radius: 20px;
+    background-color: #333334;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+
+#remove_icon_comment{
+    align-self: center;
+    justify-self: center;
+}
+
+.remove_icon_container{
+    display: grid;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.create_comment_header{
+    display: flex;
+    padding-top: 0.6rem;
+    align-items: center;
+}
+
+.create_comment_header h3{
+    flex: 1;
+    text-align: center;
+}
+
+
+#options_icon_comment{
+    cursor: pointer;
+    justify-self: end;
+}
+
+.create_comment_body .post{
+width: 100%;
+margin: 0;
+
+
+}
+
+.create_comment_body{
+    height: 350px;
+    overflow: scroll;
+    
+}
+
+
+
+
+.create_comment_container .footer{
+   
+    box-shadow: 0px 0px 10px -5px black;
+    padding: 1rem;
+    height: 120px;
+    display: flex;
+    gap:10px;
+}
+
+.create_comment_container .footer div{
+    flex:1;
+    position: relative;
+    border-radius: 10px;
+    background-color: #333334;
+    padding: 1rem;
+    display: flex;
+}
+
+.create_comment_container .footer div textarea{
+    background-color: transparent;
+    color: #E2E5E9;
+    width: 98%;
+
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.create_comment_container .footer svg{
+
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+    
+}

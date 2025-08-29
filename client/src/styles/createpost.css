@@ -1,0 +1,121 @@
+
+
+.create_post_container{
+    border-radius: 20px;
+    padding: 1.8rem;
+    z-index: 10;
+    background-color: #252728;
+    color: #E2E5E9;
+    position: fixed;
+    width: 500px;
+    height: 380px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    gap:1rem;
+
+}
+
+
+.create_post_container hr{
+  
+   border: none;
+    border-top: 1px solid #5c5f5f;
+    margin-bottom: 0.4rem;
+
+}
+.create_post_header{
+    
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr auto;
+    
+   
+   
+}
+.create_post_header div{
+    cursor: pointer;
+    justify-self: end;
+    height: 24px;
+    width: 24px;
+   
+    
+   
+
+}
+
+.create_post_header #remove_icon{
+    margin-left: 0;
+    align-self: center;
+    justify-self: center;
+
+}
+
+
+.create_post_header div span{
+    align-self: center;
+    
+    
+}
+
+
+
+
+.create_post_container input[type="submit"]{
+    background-color: #2175FF;
+    border: none;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 2, 2, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+
+}
+
+.create_post_container textarea{
+    border: none;
+    color: #B0B3B8;
+    font-size: 1.6rem;
+    background-color: transparent;
+    resize: none;
+   
+    
+   
+    width:100%;
+    height: 100%;
+
+}
+.create_post_container textarea:focus{
+   outline: none;
+}
+
+
+.create_post_profile{
+    
+   width: fit-content;
+   height: fit-content;
+   display: grid;
+   gap:9px;
+   grid-template-columns: auto auto;
+
+}
+
+.create_post_profile span{
+    align-self: center;
+}

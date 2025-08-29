@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "public"."User" ALTER COLUMN "birthday" DROP DEFAULT,
+ALTER COLUMN "email" DROP DEFAULT,
+ALTER COLUMN "gender" DROP DEFAULT;
