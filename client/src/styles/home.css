@@ -6,3 +6,9 @@
     grid-template-columns: repeat(3,1fr) ;
     
 }
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
