@@ -129,7 +129,7 @@ function Profile(){
     
         async function SetFriends() {
 
-        const response = await fetch(`http://localhost:3000/users/${MyID}/friends`)
+        const response = await fetch(`${VITE_API_URL}/users/${MyID}/friends`)
 
         const data = await response.json()
 

@@ -53,11 +53,11 @@ function Friends(){
 
     async function SetFriends_Suggesions() {
 
-        const response1 = await fetch(`http://localhost:3000/users/${MyID}/friends`)
+        const response1 = await fetch(`${VITE_API_URL}/users/${MyID}/friends`)
 
         const data1 = await response1.json()
 
-        const response2 = await fetch(`http://localhost:3000/users`)
+        const response2 = await fetch(`${VITE_API_URL}/users`)
 
         const data2 = await response2.json()
 
