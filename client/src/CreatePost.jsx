@@ -82,7 +82,7 @@ return  (
             </div>
 
             <div>
-                <textarea name="" id="post_input" placeholder="What's on your mind,Name?" value={PostText} onChange={(e)=>{SetPostText(e.target.value)}}></textarea>
+                <textarea name="" id="post_input" placeholder={`What's on your mind,${User.name}?`} value={PostText} onChange={(e)=>{SetPostText(e.target.value)}}></textarea>
             </div>
 
             <input type="submit" name="" id="" value="Post"   onClick={()=>{setOpen(false);SubmitPost()}} />

@@ -99,7 +99,7 @@ return (
 
                 <div className="header_newpost">
                     <img src={User.icon}  />
-                    <input type="text" name="" id="" onClick={()=>SetNewPost(true)} readOnly  placeholder="What's on your mind,Name?"/>
+                    <input type="text" name="" id="" onClick={()=>SetNewPost(true)} readOnly  placeholder={`What's on your mind,${User.name}?`}/>
                 </div>
 
                 <hr />
