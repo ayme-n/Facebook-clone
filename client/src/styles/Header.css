@@ -91,7 +91,7 @@ body{
 .header_Nav .allowed {
     cursor: pointer;
 }
-.header_Nav div:hover{
+.header_Nav > div:hover,.header_Nav > a:hover{
     background-color: #3B3D3D;
     
 }
@@ -102,7 +102,16 @@ body{
     justify-items: center;
     min-width: 50px;
     padding: 0.6rem 0rem;
-    
+
+}
+
+.header_Nav > a{
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    min-width: 50px;
+    padding: 0.6rem 0rem;
 
 }
 
